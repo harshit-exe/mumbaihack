@@ -19,11 +19,11 @@ const faqs = [
   },
   {
     question: "How does SakriyaBoss support multilingual teams in India?",
-    answer: "SakriyaBoss supports multiple Indian languages in its interface and AI-powered features. This allows team members to collaborate effectively, regardless of their preferred language, fostering inclusive and efficient communication across diverse Indian teams."
+    answer: "SakriyaBoss supports multiple Indian languages in its interface and AI-powered features. This allows team members to collaborate effectively regardless of their preferred language fostering inclusive and efficient communication across diverse Indian teams."
   },
   {
     question: "Do you offer customer support in Indian time zones?",
-    answer: "Yes, we provide 24/7 customer support with dedicated teams operating in Indian time zones. Our support staff is well-versed in the specific needs and challenges of Indian businesses, ensuring you receive timely and relevant assistance."
+    answer: "Yes we provide 24/7 customer support with dedicated teams operating in Indian time zones. Our support staff is well-versed in the specific needs and challenges of Indian businesses, ensuring you receive timely and relevant assistance."
   }
 ];
 
@@ -54,7 +54,7 @@ export default function FAQ() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto"
           >
-            Can't find the answer you're looking for? Reach out to our customer support team.
+            Cant find the answer youre looking for? Reach out to our customer support team.
           </motion.p>
         </div>
         <div className="mt-20">
