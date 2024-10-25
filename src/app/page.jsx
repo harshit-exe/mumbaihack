@@ -8,7 +8,7 @@ import React from "react";
 
 function page() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen  bg-gradient-to-br from-blue-50 via-teal-50 to-white">
       <Navbar />
       <Hero />
       <Features />

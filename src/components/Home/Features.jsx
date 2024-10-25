@@ -1,8 +1,8 @@
 'use client'
 
-import { motion } from 'framer-motion'
+import { motion, useScroll, useTransform } from 'framer-motion'
 import { BarChart, MessageCircle, Focus, LifeBuoy } from 'lucide-react'
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import { Button } from "@/components/ui/button"
 import {
   Card,
@@ -41,9 +41,20 @@ const features = [
 
 export default function Features() {
   const [selectedFeature, setSelectedFeature] = useState(null)
+  const targetRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: targetRef,
+    offset: ["start start", "end start"],
+  });
+
+  const opacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
+  const scale = useTransform(scrollYProgress, [0, 1], [1, 0.8]);
 
   return (
-    <div className="bg-white py-24 sm:py-32">
+    <motion.div 
+    ref={targetRef}
+      style={{ opacity }}
+       className=" py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <motion.h2 
@@ -124,6 +135,6 @@ export default function Features() {
           </motion.div>
         </motion.div>
       )}
-    </div>
+    </motion.div>
   )
 }

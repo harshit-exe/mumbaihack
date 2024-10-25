@@ -19,7 +19,7 @@ export default function Hero() {
     <motion.div
       ref={targetRef}
       style={{ opacity }}
-      className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-teal-50 to-white pt-16 pb-32 min-h-screen flex items-center"
+      className="relative overflow-hidden pt-16 pb-32 min-h-screen flex items-center"
     >
       <div className="absolute  inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center">

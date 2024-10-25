@@ -29,7 +29,7 @@ const faqs = [
 
 export default function FAQ() {
   return (
-    <section className="py-24 bg-white" id="faq">
+    <section className="py-24" id="faq">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <motion.h2
